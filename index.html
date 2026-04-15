@@ -3,57 +3,91 @@
 <head>
   <title>Portfolio Prahesti</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0d3b66, #1d7874);
+      color: white;
     }
 
     header {
-      background: #0d3b66;
-      color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
+      animation: fadeIn 2s;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 32px;
+      margin-top: 15px;
+      font-size: 30px;
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 5px;
       font-size: 18px;
+      color: #ddd;
     }
 
     section {
       background: white;
+      color: #333;
       margin: 20px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 25px;
+      border-radius: 15px;
+      animation: slideUp 1.5s;
     }
 
     h2 {
       color: #0d3b66;
+      margin-bottom: 10px;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
+    ul li {
       margin-bottom: 10px;
     }
 
     footer {
       text-align: center;
-      padding: 15px;
-      background: #0d3b66;
-      color: white;
-      margin-top: 20px;
+      padding: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Hover efek */
+    section:hover {
+      transform: scale(1.02);
+      transition: 0.3s;
     }
   </style>
 </head>
@@ -61,6 +95,9 @@
 <body>
 
 <header>
+  <!-- GANTI FOTO DI SINI -->
+  <img src="foto.jpg" alt="Foto Prahesti">
+
   <h1>Prahesti Dwi Apriliana</h1>
   <p>Web Developer</p>
 </header>
@@ -77,15 +114,15 @@
   <h2>Project</h2>
   <ul>
     <li><b>Website Penjualan (Magang Perhutani)</b><br>
-      Mengembangkan website penjualan berbasis web menggunakan HTML, CSS, dan JavaScript.
+      Mengembangkan website berbasis web menggunakan HTML, CSS, dan JavaScript.
     </li>
 
     <li><b>Aplikasi Deteksi Gambar</b><br>
-      Menggunakan Python dan OpenCV untuk mendeteksi objek sederhana.
+      Menggunakan Python dan OpenCV.
     </li>
 
-    <li><b>Website Sederhana</b><br>
-      Membuat website mandiri dengan desain sederhana dan responsif.
+    <li><b>Website Mandiri</b><br>
+      Membuat website sederhana dengan desain modern.
     </li>
   </ul>
 </section>
